@@ -1,0 +1,46 @@
+html {
+    font-size: 10px;
+    background-color: black;
+    color: white;
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 800;
+}
+
+.wrapper_main {
+    max-width: 80%;
+    margin: auto;
+}
+
+.input_item {
+    appearance: none;
+}
+
+.input_item:checked ~ .title_item > p {
+    color: greenyellow;
+}
+
+.title_item {
+    font-size: 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.title_item > p {
+    color: white;
+    transition: 1s;
+}
+
+.picture_item {
+    opacity: 0;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.input_item:checked ~ .picture_item {
+    opacity: 1;
+}
