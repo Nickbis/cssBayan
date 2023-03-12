@@ -120,7 +120,7 @@ h1 {
 @media (min-width: 660px) {
     html {
         font-size: 10px;
-      }
+    }
   
     .accordion_item:hover > .picture_item > .img_item, 
     .input_item:checked ~ .picture_item > .img_item {
@@ -129,6 +129,9 @@ h1 {
 }
 
 @media (min-width: 819px) {
+    html {
+        font-size: 11px;
+    }
   
     .accordion_item:hover > .picture_item > .img_item, 
     .input_item:checked ~ .picture_item > .img_item {
@@ -137,7 +140,9 @@ h1 {
 }
 
 @media (min-width: 1439px) {
-  
+    html {
+        font-size: 12px;
+    }
     .accordion_item:hover > .picture_item > .img_item, 
     .input_item:checked ~ .picture_item > .img_item {
         width: 30%;
