@@ -8,11 +8,13 @@ html {
     font-size: 10px;
     background-color: black;
     color: white;
+    font-style: italic;
 }
 
 h1 {
     font-size: 4rem;
     font-weight: 800;
+    font-style: normal;
 }
 
 .wrapper_main {
@@ -103,3 +105,41 @@ h1 {
 
 }
 
+
+@media (min-width: 319px) {
+    html {
+      font-size: 8px;
+    }
+  
+    .accordion_item:hover > .picture_item > .img_item, 
+    .input_item:checked ~ .picture_item > .img_item {
+        width: 100%;
+    }
+}
+
+@media (min-width: 660px) {
+    html {
+        font-size: 10px;
+      }
+  
+    .accordion_item:hover > .picture_item > .img_item, 
+    .input_item:checked ~ .picture_item > .img_item {
+        width: 60%;
+    }
+}
+
+@media (min-width: 819px) {
+  
+    .accordion_item:hover > .picture_item > .img_item, 
+    .input_item:checked ~ .picture_item > .img_item {
+        width: 50%;
+    }
+}
+
+@media (min-width: 1439px) {
+  
+    .accordion_item:hover > .picture_item > .img_item, 
+    .input_item:checked ~ .picture_item > .img_item {
+        width: 30%;
+    }
+}
